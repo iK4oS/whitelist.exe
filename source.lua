@@ -2,7 +2,7 @@
 
 function Notify(text)
 	game.StarterGui:SetCore("SendNotification",{
-		Title = "backdoor.exe V5", Text = text, Icon = "rbxassetid://6332656641"
+		Title = "backdoor.exe V6", Text = text
 	})
 end
 
@@ -11,8 +11,8 @@ if syn then http_request = syn.request end
 
 local LocalPlayer = game.Players.LocalPlayer
 
-local WEBSERVER_INDEX = "https://oigrjsnqfrsaoine.000webhostapp.com/Isopod.php"
-local URL = WEBSERVER_INDEX.."?way=12IsoGetWhitelist&whitelistKey=".. getgenv().whitelist_key
+local WEBSERVER_INDEX = "https://andf.000webhostapp.com/Verify.php"
+local URL = WEBSERVER_INDEX.."?way=GetWhitelist&whitelistKey=".. getgenv().whitelist_key
 
 Notify("Sending Request to server.")
 local response = http_request({Url = (URL),Method = "GET"})
