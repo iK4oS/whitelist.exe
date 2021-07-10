@@ -11,7 +11,7 @@ if syn then http_request = syn.request end
 
 local LocalPlayer = game.Players.LocalPlayer
 
-local WEBSERVER_INDEX = "https://andf.000webhostapp.com/Verify.php"
+local WEBSERVER_INDEX = "https://d25vd.000webhostapp.com/Verify.php"
 local URL = WEBSERVER_INDEX.."?way=GetWhitelist&whitelistKey=".. getgenv().whitelist_key .. "&usr=".. LocalPlayer.Name
 
 Notify("Sending Request to server.")
